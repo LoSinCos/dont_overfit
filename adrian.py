@@ -23,6 +23,9 @@ print(test.shape)
 #summary
 print(train.info())
 
+#head
+print(train.head())
+
 #%% create histogram of training data targets
 sns.countplot(x="target", data=train, palette="Greens_d")
 plt.show()
