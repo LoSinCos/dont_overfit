@@ -3,6 +3,7 @@ import numpy as np
 import pandas as pd
 import seaborn as sns
 import matplotlib.pyplot as plt
+from IPython.display import display
 
 #%%library adjustments
 pd.set_option('display.float_format', lambda x: '%.3f' % x)
