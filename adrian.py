@@ -10,6 +10,9 @@ sns.set(style='white', context='notebook', palette='deep')
 #warnings.filterwarnings('ignore')
 sns.set_style('white')
 #%matplotlib inline
+# Set some options
+pd.set_option('display.width', 400)
+pd.set_option('display.max_columns', None)
 
 #%% Read in data
 train = pd.read_csv('data/train.csv')
@@ -25,6 +28,12 @@ print(train.info())
 
 #head
 print(train.head())
+
+# View head
+train.head(10)
+
+# show first 30 lines and bottom 30 lines
+display(train)
 
 #%% create histogram of training data targets
 sns.countplot(x="target", data=train, palette="Greens_d")
