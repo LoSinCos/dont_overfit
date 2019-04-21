@@ -20,7 +20,7 @@ df_train.head()
 #%%
 #target_0 = df_train.loc[df_train['target'] == 0]
 #target_1 = df_train.loc[df_train['target'] == 1]
-
+#this creates the EDA for each of the 300 variables in the list
 #do not run with full 300 will crash the computer because of memory space ---- need to do it in batches of 100, and then pick ~ 10 that look interesting
 # for i in range(0,10):
 #     g = str(i)
